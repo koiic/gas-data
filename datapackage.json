@@ -1,0 +1,69 @@
+{
+  "bytes": 132747,
+  "count_of_rows": 5829,
+  "hash": "787285b7a330d19781b1aa67ff66e107",
+  "homepage": "http://www.cboe.com/micro/VIX/",
+  "licenses": [
+    {
+      "id": "odc-pddl",
+      "name": "open_data_commons_public_domain_dedication_and_license_v1.0",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License v1.0"
+    }
+  ],
+  "name": "gas-data",
+  "profile": "data-package",
+  "readme": "Henry Hub gas prices(Dollars per Million Btu) for daily and monthly",
+  "resources": [
+    {
+      "dpp:streaming": true,
+      "encoding": "utf-8",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "Henry-Hub-Daily",
+      "path": "data/Henry-Hub-Daily.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "any",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Price",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "title": "Henry-Hub-Daily"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Henry Hub gas prices",
+      "path": "http://www.eia.gov/dnav/ng/hist/rngwhhdm.htm",
+      "title": "Henry Hub gas prices"
+    }
+  ],
+  "title": "Henry Hub gas prices",
+  "version": "0.2.0",
+  "views": [
+    {
+      "name": "graph",
+      "spec": {
+        "group": "Date",
+        "series": [
+          "Price"
+        ],
+        "type": "line"
+      },
+      "specType": "simple",
+      "title": "Gas-Price - Henry Hub gas price"
+    }
+  ]
+}
