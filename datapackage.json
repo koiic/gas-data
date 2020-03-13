@@ -1,19 +1,8 @@
 {
-  "bytes": 132747,
-  "count_of_rows": 5829,
-  "hash": "787285b7a330d19781b1aa67ff66e107",
-  "homepage": "http://www.cboe.com/micro/VIX/",
-  "licenses": [
-    {
-      "id": "odc-pddl",
-      "name": "open_data_commons_public_domain_dedication_and_license_v1.0",
-      "path": "http://opendatacommons.org/licenses/pddl/",
-      "title": "Open Data Commons Public Domain Dedication and License v1.0"
-    }
-  ],
+  "count_of_rows_daily_prices": 5829,
   "name": "gas-data",
   "profile": "data-package",
-  "readme": "Henry Hub gas prices(Dollars per Million Btu) for daily and monthly",
+  "readme": "Henry Hub gas prices(Dollars per Million Btu) for daily, monthly and yearly",
   "resources": [
     {
       "dpp:streaming": true,
